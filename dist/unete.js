@@ -29,10 +29,10 @@
         }
 
         async post(method, data = []) {
-            const response = (await fetch(`${this.host}${method}`, {
+            const response = await (await fetch(`${this.host}${method}`, {
                 method: 'POST',
                 body: JSON.stringify(data),
-                mode: 'no-cors'
+                headers: new Headers({ 'content-type': 'application/x-www-form-urlencoded' })
             })).json();
 
             if (response.status === "err") throw response.result;
