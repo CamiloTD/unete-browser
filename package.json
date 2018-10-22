@@ -1,0 +1,28 @@
+{
+  "name": "unete-browser",
+  "version": "1.0.1",
+  "description": "Unete library for browser",
+  "main": "./dist/unete.min.js",
+  "scripts": {
+    "build": "babel --plugins transform-es2015-modules-umd src/index.js -o dist/unete.js && babel --presets minify dist/unete.js -o dist/unete.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CamiloTD/unete-browser.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CamiloTD/unete-browser/issues"
+  },
+  "homepage": "https://github.com/CamiloTD/unete-browser#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-es2015-modules-umd": "^6.24.1",
+    "babel-preset-minify": "^0.5.0"
+  },
+  "dependencies": {
+    "babel-core": "^6.26.3"
+  }
+}
