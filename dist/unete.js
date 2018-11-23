@@ -8,7 +8,7 @@
             exports: {}
         };
         factory(mod.exports);
-        global.index = mod.exports;
+        global.Unete = mod.exports;
     }
 })(this, function (exports) {
     'use strict';

@@ -4,7 +4,7 @@
   "description": "Unete library for browser",
   "main": "./dist/unete.min.js",
   "scripts": {
-    "build": "babel --plugins transform-es2015-modules-umd src/index.js -o dist/unete.js && babel --presets minify dist/unete.js -o dist/unete.min.js"
+    "build": "babel --plugins transform-es2015-modules-umd src/Unete.js -o dist/unete.js && babel --presets minify dist/unete.js -o dist/unete.min.js"
   },
   "repository": {
     "type": "git",
